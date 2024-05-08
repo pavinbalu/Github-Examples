@@ -1,0 +1,15 @@
+name: example-worklfow
+'on':
+  - push
+jobs:
+  hellow-world: null
+  if: github.repository == 'octo-org/octo-repo-prod'
+  runs-on: ubuntu-latest
+  steps:
+    - name: Hellow-World
+      run: echo "Hello-World!"
+  goodbye-moon:
+    runs-on: ubuntu-latest
+    steps: null
+    '-name': Goodbye Moon
+    run: echo "Goodbye Moon!"
